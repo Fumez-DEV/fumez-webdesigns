@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumez - Web Designs</title>
+    <link rel="icon" href="./images/fumez-webs.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <img src="images/fumez-webs.png" alt="Fumez Logo" class="logo">
+    <button class="toggle-button">☰</button> <!-- Mobile menu toggle button -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li> <!-- New FAQ link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Sections -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to Fumez Web Designs</h1>
+            <p class="subheading">Building digital experiences that inspire and engage.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="mission">"Empowering brands through beautifully crafted websites."</p>
+        <div class="divider"></div>
+        <div class="about-content">
+            <img src="images/arik.jpg" alt="Arik's Photo" class="about-image">
+            <div class="about-text">
+                <p>Hi! I'm Arik, the Founder of Fumez - Web Designs. With a passion for creating intuitive and visually stunning websites, I specialize in helping businesses build a strong online presence. Every project is crafted with attention to detail, ensuring a seamless user experience and an aesthetic that aligns with your brand.</p>
+                <p>Whether you’re a startup or an established business, Fumez - Web Designs is here to bring your digital vision to life. Let’s work together to make your website a powerful tool for growth!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Web Development, SEO Optimization, and more!</p>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>We build fast, modern, and responsive websites tailored to your brand and goals.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>SEO Optimization</h3>
+                <p>Our SEO services improve your search engine ranking, helping you reach a wider audience.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>UI/UX Design</h3>
+                <p>We design intuitive and engaging interfaces that provide a seamless experience for your users.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>E-commerce Solutions</h3>
+                <p>From small shops to complex marketplaces, we develop e-commerce platforms that convert.</p>
+            </div>
+        </div>
+        <a href="#contact" class="cta-button">Get a Free Consultation</a>
+    </section>
+    
+    <section id="pricing">
+        <h2>Pricing & Packages</h2>
+        <p>Choose the perfect package for your website needs.</p>
+        
+        <div class="pricing-table">
+            <!-- Basic Package -->
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p class="price">₪399.90</p>
+                <p class="package-description">Starter Website - A simple, one-page website with basic functionality and responsive design.</p>
+                <ul>
+                    <li>Functional website</li>
+                    <li>Content upload</li>
+                    <li>Social media icons</li>
+                    <li>1 page</li>
+                    <li>1 plugin/extension</li>
+                    <li>1 revision</li>
+                    <li>Delivery: 7 days (3-day rush available for ₪196.95)</li>
+                </ul>
+                <button onclick="openEmail('Basic')">Select</button>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="pricing-card premium">
+                <h3>Premium</h3>
+                <p class="price">₪1,899</p>
+                <p class="package-description">Advanced Website with AI - A fully customized multi-page website with AI integration, e-commerce, speed optimization, and advanced features.</p>
+                <ul>
+                    <li>Functional website</li>
+                    <li>Content upload</li>
+                    <li>E-commerce functionality</li>
+                    <li>Payment processing</li>
+                    <li>Opt-in form</li>
+                    <li>Autoresponder integration</li>
+                    <li>Speed optimization</li>
+                    <li>Hosting setup</li>
+                    <li>Social media icons</li>
+                    <li>10 pages</li>
+                    <li>10 plugins/extensions</li>
+                    <li>50 products</li>
+                    <li>Unlimited revisions</li>
+                    <li>Delivery: 21 days (14-day rush available for ₪393.90)</li>
+                </ul>
+                <button onclick="openEmail('Premium')">Select</button>
+            </div>
+            
+            <!-- Standard Package -->
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <p class="price">₪1,199</p>
+                <p class="package-description">Business Website - A multi-page website with essential features and responsive design, optimized for business use.</p>
+                <ul>
+                    <li>Functional website</li>
+                    <li>Content upload</li>
+                    <li>E-commerce functionality</li>
+                    <li>Payment processing</li>
+                    <li>Opt-in form</li>
+                    <li>Speed optimization</li>
+                    <li>Hosting setup</li>
+                    <li>Social media icons</li>
+                    <li>5 pages</li>
+                    <li>3 plugins/extensions</li>
+                    <li>2 revisions</li>
+                    <li>Delivery: 14 days (7-day rush available for ₪295.43)</li>
+                </ul>
+                <button onclick="openEmail('Standard')">Select</button>
+            </div>
+        </div>
+
+<div class="disclaimer">
+    <strong>* Prices may vary based on the specifics of your project.</strong> We strive to offer flexible pricing, and the final cost may be lower than the listed price.
+</div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <p>See the amazing websites we've built for our clients.</p>
+        <div class="testimonial-gallery">
+            
+            <!-- Isaac Lasry Testimonial -->
+            <div class="testimonial-item">
+                <img src="./images/il-landpage.jpg" alt="Isaac Lasry" class="testimonial-image">
+                <p><strong>Isaac Lasry</strong></p>
+                <p>Entrepreneur / Model</p>
+            </div>
+            
+        <!-- Pal Shalev Testimonial -->
+        <div class="testimonial-item">
+            <video src="./images/pals-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
+            <p><strong>Pal Shalev</strong></p>
+            <p>Personal Trainer</p>
+        </div>
+        
+        <!-- Ariel Benjamin Testimonial -->
+        <div class="testimonial-item">
+            <video src="./images/arielb-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
+            <p><strong>Ariel Benjamin</strong></p>
+            <p>Bodybuilder and Trainer</p>
+        </div>
+        
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What services do you offer?</h3>
+                <p>We offer a range of web design services including website development, e-commerce setup, content management, and SEO optimization to help grow your online presence.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does it take to build a website?</h3>
+                <p>The timeline depends on the project scope. Our basic packages start at around 7 days, while more advanced sites can take up to 21 days. We also offer expedited options.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I request changes after the website is live?</h3>
+                <p>Yes, we offer support and revisions based on the package you choose. Additional changes can be arranged if needed.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How much does a website cost?</h3>
+                <p>The cost depends on your specific requirements. Refer to our Pricing section for package details, and feel free to contact us for a custom quote.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept various payment methods, including credit cards, PayPal, and bank transfers. Let us know if you have specific preferences.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch to start your project.</p>
+        
+        <!-- Confirmation Message -->
+        <div class="confirmation-message" style="display: none;">
+            Thank you! Your message has been sent.
+        </div>
+        
+        <form action="https://formspree.io/f/mvgokwnb" method="POST" id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-text">
+            © 2024 Fumez - Web Designs. All Rights Reserved.
+        </div>
+        <div class="social-links">
+            <a href="https://x.com/fumez_arik" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/fumez.websites/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/arik.melku.7/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://discord.com/users/761165070511243264" target="_blank">
+                <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord" class="social-icon">
+            </a>
+            <a href="https://github.com/Fumez-DEV" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/fumezam" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="mailto:arikmelku3@gmail.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="social-icon">
+            </a>
+            <!-- Fiverr Link -->
+            <a href="https://www.fiverr.com/fumezarik" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fiverr_Logo_09.2020.svg" alt="Fiverr" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    
+       
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

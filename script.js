@@ -87,6 +87,7 @@ function openEmail(packageType) {
     
     const modal = document.getElementById('languageModal');
     modal.style.display = 'flex'; // Show the modal
+    document.body.classList.add('modal-open'); // Disable scrolling
 
     // Handle language selection
     document.getElementById('englishButton').onclick = function() {
@@ -119,6 +120,7 @@ function sendEmail(email, subject, body) {
 function closeModal() {
     const modal = document.getElementById('languageModal');
     modal.style.display = 'none';
+    document.body.classList.remove('modal-open'); // Enable scrolling
 }
 
 // FAQ item toggle

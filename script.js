@@ -79,19 +79,46 @@ async function convertVideoToGif(videoPath, outputPath) {
     document.getElementById(outputPath).src = gifUrl;
 }
 
-// Open email function with language option
+// Function to open email with selected language
 function openEmail(packageType) {
     const email = "arikmelku3@gmail.com";
-    const isEnglish = confirm("Would you like to send the message in English? Click 'Cancel' for Hebrew.");
-
-    const translatedPackageType = isEnglish ? packageType : (packageType === 'Basic' ? 'בסיסית' : packageType === 'Standard' ? 'סטנדרטית' : 'פרימיום');
-    const subject = encodeURIComponent(`Interest in ${translatedPackageType} Package from Fumez Web Designs`);
-
     const englishMessage = `Hello Arik,\n\nI am interested in the ${packageType} package offered by Fumez Web Designs. Please provide me with more details about this package and the next steps to proceed.\n\nHere are my details:\n\nName: [Your Name]\nEmail: [Your Email]\nPhone: [Your Phone Number]\n\nAdditional Information or Requirements:\n[Please add any specific details you would like to share]\n\nThank you for your assistance!\n\nBest regards,\n[Your Name]`;
-    const hebrewMessage = `שלום אריק,\n\nאני מעוניין/ת בחבילה ${translatedPackageType} שמוצעת ב-Fumez Web Designs. אשמח לקבל פרטים נוספים לגבי החבילה ואת הצעדים הבאים להמשך.\n\nהנה הפרטים שלי:\n\nשם: [השם שלך]\nאימייל: [האימייל שלך]\nטלפון: [מספר הטלפון שלך]\n\nמידע נוסף או דרישות:\n[אנא הוסף/הוסיפי כל פרט נוסף שתרצה/תרצי לשתף]\n\nתודה על העזרה שלך!\n\nבברכה,\n[השם שלך]`;
+    const hebrewMessage = `שלום אריק,\n\nאני מעוניין/ת בחבילה ${packageType === 'Basic' ? 'בסיסית' : packageType === 'Standard' ? 'סטנדרטית' : 'פרימיום'} שמוצעת ב-Fumez Web Designs. אשמח לקבל פרטים נוספים לגבי החבילה ואת הצעדים הבאים להמשך.\n\nהנה הפרטים שלי:\n\nשם: [השם שלך]\nאימייל: [האימייל שלך]\nטלפון: [מספר הטלפון שלך]\n\nמידע נוסף או דרישות:\n[אנא הוסף/הוסיפי כל פרט נוסף שתרצה/תרצי לשתף]\n\nתודה על העזרה שלך!\n\nבברכה,\n[השם שלך]`;
 
-    const body = isEnglish ? encodeURIComponent(englishMessage) : encodeURIComponent(hebrewMessage);
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    const modal = document.getElementById('languageModal');
+    modal.style.display = 'flex'; // Show the modal
+
+    // Handle language selection
+    document.getElementById('englishButton').onclick = function() {
+        sendEmail(email, `Interest in ${packageType} Package from Fumez Web Designs`, englishMessage);
+        closeModal();
+    };
+
+    document.getElementById('hebrewButton').onclick = function() {
+        sendEmail(email, `התעניינות בחבילת ${packageType === 'Basic' ? 'בסיסית' : packageType === 'Standard' ? 'סטנדרטית' : 'פרימיום'} מ-Fumez Web Designs`, hebrewMessage);
+        closeModal();
+    };
+
+    // Close modal on "X" button click
+    document.getElementById('closeModal').onclick = closeModal;
+
+    // Close modal on "Esc" key press
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            closeModal();
+        }
+    });
+}
+
+// Function to open mailto link
+function sendEmail(email, subject, body) {
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById('languageModal');
+    modal.style.display = 'none';
 }
 
 // FAQ item toggle

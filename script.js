@@ -83,8 +83,8 @@ async function convertVideoToGif(videoPath, outputPath) {
 function openEmail(packageType) {
     const email = "arikmelku3@gmail.com";
     const englishMessage = `Hello Arik,\n\nI am interested in the ${packageType} package offered by Fumez Web Designs. Please provide me with more details about this package and the next steps to proceed.\n\nHere are my details:\n\nName: [Your Name]\nEmail: [Your Email]\nPhone: [Your Phone Number]\n\nAdditional Information or Requirements:\n[Please add any specific details you would like to share]\n\nThank you for your assistance!\n\nBest regards,\n[Your Name]`;
-    const hebrewMessage = `שלום אריק,\n\nאני מעוניין/ת בחבילה ${packageType === 'Basic' ? 'בסיסית' : packageType === 'Standard' ? 'סטנדרטית' : 'פרימיום'} שמוצעת ב-Fumez Web Designs. אשמח לקבל פרטים נוספים לגבי החבילה ואת הצעדים הבאים להמשך.\n\nהנה הפרטים שלי:\n\nשם: [השם שלך]\nאימייל: [האימייל שלך]\nטלפון: [מספר הטלפון שלך]\n\nמידע נוסף או דרישות:\n[אנא הוסף/הוסיפי כל פרט נוסף שתרצה/תרצי לשתף]\n\nתודה על העזרה שלך!\n\nבברכה,\n[השם שלך]`;
-
+    const hebrewMessage = `שלום אריק,\n\nאני מעוניין/ת בחבילה ${packageType === 'Basic' ? 'בסיסית' : packageType === 'Standard' ? 'סטנדרטית' : 'פרימיום'} שמוצעת ב-פיומז - עיצובי אתרים. אשמח לקבל פרטים נוספים לגבי החבילה ואת הצעדים הבאים להמשך.\n\nהנה הפרטים שלי:\n\nשם: [השם שלך]\nאימייל: [האימייל שלך]\nטלפון: [מספר הטלפון שלך]\n\nמידע נוסף או דרישות:\n[אנא הוסף/הוסיפי כל פרט נוסף שתרצה/תרצי לשתף]\n\nתודה על העזרה שלך!\n\nבברכה,\n[השם שלך]`;
+    
     const modal = document.getElementById('languageModal');
     modal.style.display = 'flex'; // Show the modal
 

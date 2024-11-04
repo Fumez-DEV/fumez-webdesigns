@@ -995,6 +995,11 @@ form.visible, #contact h2.visible, #contact p.visible {
     z-index: 1000;
 }
 
+/* Modal and Body Scroll Control */
+.modal-open {
+    overflow: hidden;
+}
+
 .modal-content {
     background-color: #fff;
     padding: 20px;
@@ -1053,6 +1058,7 @@ form.visible, #contact h2.visible, #contact p.visible {
     width: 24px;
     height: auto;
 }
+
 
 /* Footer Styling */
 footer {

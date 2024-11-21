@@ -230,6 +230,7 @@ section.visible {
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Enables parallax effect */
     color: #fff;
     text-align: center;
     padding: 150px 20px;
@@ -242,7 +243,7 @@ section.visible {
     overflow: hidden;
 }
 
-/* Dark overlay for better readability */
+/* Gradient Overlay for Hero Section */
 #home::before {
     content: "";
     position: absolute;
@@ -250,10 +251,11 @@ section.visible {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); /* Gradient for dynamic overlay */
     z-index: 1;
 }
 
+/* Ensure content appears above overlay */
 #home h1,
 #home p,
 #home .cta-button {
@@ -261,37 +263,60 @@ section.visible {
     z-index: 2; /* Brings text above the overlay */
 }
 
+/* Hero Heading (h1) Styling */
 #home h1 {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for better contrast */
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif; /* Use modern Google Font */
+    animation: fadeInDown 1s ease-out forwards; /* Add entrance animation */
 }
 
+/* Subheading (p) Styling */
 #home p {
     font-size: 1.5rem;
     margin-bottom: 30px;
     max-width: 800px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInUp 1s ease-out forwards; /* Add entrance animation */
 }
 
+/* Call-to-Action (CTA) Button Styling */
 #home .cta-button {
     padding: 15px 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    background-color: #007bff; /* Brand color */
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Subtle shadow for focus */
+    animation: fadeIn 1.5s ease-out forwards; /* Add entrance animation */
 }
 
 #home .cta-button:hover {
-    background-color: rgba(255, 255, 255, 1);
-    color: #111;
+    background-color: #0056b3; /* Slightly darker color on hover */
+    transform: scale(1.05); /* Slight scale effect */
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* More prominent shadow on hover */
 }
 
-/* Entrance Animation */
-@keyframes fadeIn {
+/* Keyframes for Fade-In Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -302,7 +327,7 @@ section.visible {
     }
 }
 
-/* Hero Section: Mobile Adjustments */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
     #home {
         padding: 100px 20px;
@@ -310,7 +335,7 @@ section.visible {
 
     #home h1 {
         font-size: 2rem;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         line-height: 1.4;
     }
 
@@ -322,15 +347,18 @@ section.visible {
 
     #home .cta-button {
         font-size: 1rem;
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
 }
 
-
-#about, #services, #contact {
+/* Additional Sections Background Color */
+#about,
+#services,
+#contact {
     background: #fff;
     color: #333;
 }
+
 
 /* Headings */
 h2 {

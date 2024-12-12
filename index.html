@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM9XLKRPXQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TM9XLKRPXQ');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fumez - Web Designs</title>
+    <title>Fumez - Web Designs | Professional Web Development & SEO Services</title>
+    <meta name="description" content="Fumez Web Designs specializes in creating intuitive, responsive websites tailored to your brand. Services include web development, SEO optimization, e-commerce, and UI/UX design.">
+    <meta name="keywords" content="Fumez Web Designs, Web Development, SEO Optimization, E-commerce Solutions, UI/UX Design, Digital Marketing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fumezai.design">
     <link rel="icon" href="./images/fumez-webs.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,37 +24,43 @@
 
 <!-- Navbar -->
 <header>
-    <img src="images/fumez-webs.png" alt="Fumez Logo" class="logo">
+    <img src="images/fumez-webs.png" alt="Fumez - Web Designs Logo" class="logo">
     <button class="toggle-button">☰</button> <!-- Mobile menu toggle button -->
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#faq">FAQ</a></li> <!-- New FAQ link -->
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home"><img src="https://www.svgrepo.com/show/535437/home.svg" class="nav-icon" alt="Home Icon"> Home</a></li>
+            <li><a href="#about"><img src="https://www.svgrepo.com/show/480805/information-button.svg" class="nav-icon" alt="About Icon"> About</a></li>
+            <li><a href="#services"><img src="https://www.svgrepo.com/show/345230/tools.svg" class="nav-icon" alt="Services Icon"> Services</a></li>
+            <li><a href="#pricing"><img src="https://www.svgrepo.com/show/488338/price-ui.svg" class="nav-icon" alt="Pricing Icon"> Pricing</a></li>
+            <li><a href="#testimonials"><img src="https://www.svgrepo.com/show/535500/megaphone.svg" class="nav-icon" alt="Testimonials Icon"> Testimonials</a></li>
+            <li><a href="#faq"><img src="https://www.svgrepo.com/show/500665/question-filled.svg" class="nav-icon" alt="FAQ Icon"> FAQ</a></li>
+            <li><a href="#contact"><img src="https://www.svgrepo.com/show/503592/support.svg" class="nav-icon" alt="Contact Icon"> Contact</a></li>
         </ul>
     </nav>
+    <div class="language-switcher">
+        <a href="index-he.html" class="language-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" alt="עברית" class="language-icon">
+            עברית
+        </a>
+    </div>
 </header>
 
 
-    <!-- Sections -->
-    <section id="home">
-        <div class="hero-content">
-            <h1>Welcome to Fumez Web Designs</h1>
-            <p class="subheading">Building digital experiences that inspire and engage.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
+<!-- Main Sections -->
+<section id="home">
+    <div class="hero-content">
+        <h1>Welcome to Fumez Web Designs</h1>
+        <p class="subheading">Building digital experiences that inspire and engage.</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+</section>
     
     <section id="about">
         <h2>About Us</h2>
         <p class="mission">"Empowering brands through beautifully crafted websites."</p>
         <div class="divider"></div>
         <div class="about-content">
-            <img src="images/arik.jpg" alt="Arik's Photo" class="about-image">
+            <img src="images/arik.jpg" alt="Arik, Founder of Fumez Web Designs" class="about-image">
             <div class="about-text">
                 <p>Hi! I'm Arik, the Founder of Fumez - Web Designs. With a passion for creating intuitive and visually stunning websites, I specialize in helping businesses build a strong online presence. Every project is crafted with attention to detail, ensuring a seamless user experience and an aesthetic that aligns with your brand.</p>
                 <p>Whether you’re a startup or an established business, Fumez - Web Designs is here to bring your digital vision to life. Let’s work together to make your website a powerful tool for growth!</p>
@@ -56,22 +75,19 @@
         <div class="services-container">
             <div class="service-item">
                 <h3>Web Development</h3>
-                <p>We build fast, modern, and responsive websites tailored to your brand and goals.</p>
+                <p>We build fast, modern, and responsive websites tailored to your brand.</p>
             </div>
-            
             <div class="service-item">
                 <h3>SEO Optimization</h3>
-                <p>Our SEO services improve your search engine ranking, helping you reach a wider audience.</p>
+                <p>Our SEO services improve your search engine ranking.</p>
             </div>
-            
             <div class="service-item">
                 <h3>UI/UX Design</h3>
-                <p>We design intuitive and engaging interfaces that provide a seamless experience for your users.</p>
+                <p>We design intuitive and engaging interfaces for a seamless user experience.</p>
             </div>
-            
             <div class="service-item">
                 <h3>E-commerce Solutions</h3>
-                <p>From small shops to complex marketplaces, we develop e-commerce platforms that convert.</p>
+                <p>From small shops to marketplaces, we develop e-commerce platforms that convert.</p>
             </div>
         </div>
         <a href="#contact" class="cta-button">Get a Free Consultation</a>
@@ -155,30 +171,27 @@
         <h2>Client Testimonials</h2>
         <p>See the amazing websites we've built for our clients.</p>
         <div class="testimonial-gallery">
-            
-            <!-- Isaac Lasry Testimonial -->
             <div class="testimonial-item">
                 <img src="./images/il-landpage.jpg" alt="Isaac Lasry" class="testimonial-image">
-                <p><strong>Isaac Lasry</strong></p>
-                <p>Entrepreneur / Model</p>
+                <p><strong>Isaac Lasry</strong> - Entrepreneur / Model</p>
             </div>
-            
-        <!-- Pal Shalev Testimonial -->
-        <div class="testimonial-item">
-            <video src="./images/pals-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
-            <p><strong>Pal Shalev</strong></p>
-            <p>Personal Trainer</p>
+            <div class="testimonial-item">
+                <video src="./images/pals-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
+                <p><strong>Pal Shalev</strong> - Personal Trainer</p>
+            </div>
+            <div class="testimonial-item">
+                <video src="./images/arielb-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
+                <p><strong>Ariel Benjamin</strong> - Bodybuilder and Trainer</p>
+            </div>
+            <!-- Dan Cohen Testimonial -->
+            <div class="testimonial-item">
+                <img src="./images/danzylandingpage.png" alt="Dan Cohen's Landing Page" class="testimonial-image">
+                <p><strong>Dan Cohen</strong> - Fashion & Lifestyle Influencer</p>
+            </div>
         </div>
-        
-        <!-- Ariel Benjamin Testimonial -->
-        <div class="testimonial-item">
-            <video src="./images/arielb-website.mp4" class="testimonial-gif" autoplay loop muted playsinline></video>
-            <p><strong>Ariel Benjamin</strong></p>
-            <p>Bodybuilder and Trainer</p>
-        </div>
-        
     </section>
-
+    
+    
     <section id="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
@@ -229,7 +242,7 @@
         </div>
         <div class="social-links">
             <a href="https://x.com/fumez_arik" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Twitter" class="social-icon">
             </a>
             <a href="https://www.instagram.com/fumez.websites/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="social-icon">
@@ -237,28 +250,41 @@
             <a href="https://www.facebook.com/arik.melku.7/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Facebook" class="social-icon">
             </a>
-            <a href="https://discord.com/users/761165070511243264" target="_blank">
-                <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord" class="social-icon">
-            </a>
-            <a href="https://github.com/Fumez-DEV" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
-            </a>
             <a href="https://www.linkedin.com/in/fumezam" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="mailto:arikmelku3@gmail.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="social-icon">
-            </a>
-            <!-- Fiverr Link -->
-            <a href="https://www.fiverr.com/fumezarik" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fiverr_Logo_09.2020.svg" alt="Fiverr" class="social-icon">
             </a>
         </div>
     </footer>
     
-       
+<!-- Language Selection Modal -->
+<div id="languageModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" class="close-button">&times;</button>
+        <h3>Select Language</h3>
+        <p>Would you like to send the message in English or Hebrew?</p>
+        <div class="language-options">
+            <button id="englishButton" class="language-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English" class="flag-icon">
+                English
+            </button>
+            <button id="hebrewButton" class="language-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" alt="Hebrew" class="flag-icon">
+                Hebrew
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="whatsapp-bubble">
+    <a href="https://wa.link/26imc5" target="_blank" aria-label="Chat with us on WhatsApp">
+        <span class="cta-message">Click here to chat with us!</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+    </a>
+</div>
+
+<div id="transition-overlay"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.min.js"></script>
-    <script src="script.js"></script>
-    
+    <script src="script.js"></script>    
 </body>
 </html>

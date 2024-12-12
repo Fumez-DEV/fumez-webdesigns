@@ -89,25 +89,19 @@ header {
 /* Toggle Button Styling for Mobile */
 .toggle-button {
     display: none;
-<<<<<<< HEAD
     position: absolute;
     top: 15px;
     right: 20px;
-=======
     position: fixed; /* Stick the button to a fixed position */
     top: 15px; /* Position it near the top */
     right: 20px; /* Align it to the right side */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
     background: none;
     border: none;
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
-<<<<<<< HEAD
     z-index: 1500;
-=======
     z-index: 1500; /* Ensure it appears above other elements */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
     transition: color 0.3s ease;
 }
 
@@ -150,11 +144,8 @@ nav ul li a.active {
 .nav-icon {
     width: 20px;
     height: 20px;
-<<<<<<< HEAD
     filter: invert(100%);
-=======
     filter: invert(100%); /* Ensures SVG icon colors match the white text */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
     transition: transform 0.3s;
 }
 
@@ -181,11 +172,11 @@ nav ul li a:hover .nav-icon {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-<<<<<<< HEAD
+
         background-color: rgba(51, 51, 51, 0.95);
-=======
+
         background-color: rgba(51, 51, 51, 0.95); /* Semi-transparent background */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
         position: fixed;
         top: 0;
         right: 0;
@@ -202,19 +193,17 @@ nav ul li a:hover .nav-icon {
     }
 
     nav ul.show {
-<<<<<<< HEAD
+
         display: flex;
-=======
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
     }
 
-<<<<<<< HEAD
-=======
+
+
     /* Navigation Links */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
     nav ul li {
         width: 100%;
         margin: 20px 0;
@@ -238,10 +227,10 @@ nav ul li a:hover .nav-icon {
         color: #f4f4f4;
     }
 
-<<<<<<< HEAD
-=======
+
+
     /* Icon Styling */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
     .nav-icon {
         width: 24px;
         height: 24px;
@@ -256,14 +245,14 @@ nav ul li a:hover .nav-icon {
 }
 
 
-<<<<<<< HEAD
-=======
+
+
 
 /* Smooth Scroll on Link Click */
 nav ul li a {
     scroll-behavior: smooth;
 }
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
 
 /* Section Styling */
 section {
@@ -311,7 +300,7 @@ section.visible {
     z-index: 1;
 }
 
-<<<<<<< HEAD
+
 /* Hero Section Styling */
 #home {
     background-image: url('./images/hero.png'); /* Hero image */
@@ -343,8 +332,8 @@ section.visible {
     z-index: 1;
 }
 
-=======
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
+
 /* Ensure content appears above overlay */
 #home h1,
 #home p,
@@ -369,18 +358,18 @@ section.visible {
     font-size: 1.8rem; /* Slightly larger font for readability */
     margin-bottom: 30px;
     max-width: 800px;
-<<<<<<< HEAD
+
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Improved shadow for visibility */
     line-height: 1.7; /* Increased line height for better readability */
     font-family: 'Roboto', sans-serif; /* Complementary font for subheading */
     color: #dddddd; /* Slightly lighter color to distinguish from the heading */
     animation: fadeInUp 1s ease-out forwards; /* Smooth entrance animation */
-=======
+
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     animation: fadeInUp 1s ease-out forwards; /* Add entrance animation */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
 }
 
 /* Call-to-Action (CTA) Button Styling */
@@ -392,22 +381,22 @@ section.visible {
     text-decoration: none;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
-<<<<<<< HEAD
+
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Subtle shadow */
-=======
+
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Subtle shadow for focus */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
     animation: fadeIn 1.5s ease-out forwards; /* Add entrance animation */
 }
 
 #home .cta-button:hover {
     background-color: #0056b3; /* Slightly darker color on hover */
     transform: scale(1.05); /* Slight scale effect */
-<<<<<<< HEAD
+
     box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* Prominent shadow on hover */
-=======
+
     box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* More prominent shadow on hover */
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
 }
 
 /* Keyframes for Fade-In Animation */
@@ -1216,7 +1205,7 @@ form.visible, #contact h2.visible, #contact p.visible {
     height: auto;
 }
 
-<<<<<<< HEAD
+
 /* WhatsApp Bubble Styling */
 .whatsapp-bubble {
     position: fixed;
@@ -1297,8 +1286,8 @@ form.visible, #contact h2.visible, #contact p.visible {
         left: 50px;
     }
 }
-=======
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
+
+
 
 /* Footer Styling */
 footer {

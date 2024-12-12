@@ -1,26 +1,26 @@
-<<<<<<< HEAD
-{
-    "projectName": "Fumez - Web Designs",
-    "author": "Arik Melku",
-    "description": "A portfolio of custom web design projects",
-    "version": "1.0.0",
-    "contactEmail": "arikmelku3@gmail.com",
-    "socialLinks": {
-        "instagram": "https://www.instagram.com/fumez.websites/",
-        "linkedin": "https://www.linkedin.com/in/fumezam",
-        "fiverr": "https://www.fiverr.com/fumezarik"
+[
+    {
+        "projectName": "Fumez - Web Designs",
+        "author": "Arik Melku",
+        "description": "A portfolio of custom web design projects",
+        "version": "1.0.0",
+        "contactEmail": "arikmelku3@gmail.com",
+        "socialLinks": {
+            "instagram": "https://www.instagram.com/fumez.websites/",
+            "linkedin": "https://www.linkedin.com/company/fumez-web-designs/",
+            "fiverr": "https://www.fiverr.com/fumezarik"
+        }
+    },
+    {
+        "projectName": "Fumez - Web Designs",
+        "author": "Arik Melku",
+        "description": "A portfolio of custom web design projects",
+        "version": "1.0.0",
+        "contactEmail": "arikmelku3@gmail.com",
+        "socialLinks": {
+            "instagram": "https://www.instagram.com/fumez.websites/",
+            "linkedin": "https://www.linkedin.com/company/fumez-web-designs/",
+            "fiverr": "https://www.fiverr.com/fumezarik"
+        }
     }
-=======
-{
-    "projectName": "Fumez - Web Designs",
-    "author": "Arik Melku",
-    "description": "A portfolio of custom web design projects",
-    "version": "1.0.0",
-    "contactEmail": "arikmelku3@gmail.com",
-    "socialLinks": {
-        "instagram": "https://www.instagram.com/fumez.websites/",
-        "linkedin": "https://www.linkedin.com/in/fumezam",
-        "fiverr": "https://www.fiverr.com/fumezarik"
-    }
->>>>>>> bd2259babb3889d15c1e355054c47e7e712de6ab
-}
+]
